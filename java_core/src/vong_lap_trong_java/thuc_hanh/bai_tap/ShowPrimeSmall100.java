@@ -2,18 +2,13 @@ package vong_lap_trong_java.thuc_hanh.bai_tap;
 
 import java.util.Scanner;
 
-public class Show20PrimeTheFirstNumber {
+public class ShowPrimeSmall100 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("20 Prime The First Number: ");
-        int count = 0;
-        int i = 2;
-        while (count < 20) {
+        System.out.println("The number prime small 100 is: ");
+        for (int i = 2; i < 100; i++) {
             if (check_prime(i)) {
                 System.out.print(i + ", ");
-                count++;
             }
-            i++;
         }
     }
     public static boolean check_prime(int n) {
